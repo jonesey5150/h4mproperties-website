@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  color: #1c2730;
+  background: #f7f7f4;
+  line-height: 1.6;
+}
+
+a {
+  color: #315c6b;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1e3f4a;
+}
+
+header {
+  background: #17252d;
+  color: white;
+  padding: 22px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+header a {
+  color: white;
+}
+
+header > a:first-child {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #dce5e7;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: white;
+}
+
+main {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 70px 7%;
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+h1 {
+  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  line-height: .98;
+  letter-spacing: -.045em;
+  margin: 20px 0 28px;
+  max-width: 850px;
+  color: #17252d;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+  line-height: 1.15;
+  color: #17252d;
+  margin-bottom: 18px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #17252d;
+}
+
+p {
+  max-width: 800px;
+  font-size: 1.08rem;
+}
+
+main > p:first-of-type,
+section > p:first-of-type {
+  color: #52616a;
+}
+
+.hero,
+main > section:first-child {
+  padding: 55px 0;
+}
+
+.card,
+article {
+  background: white;
+  padding: 32px;
+  margin: 24px 0;
+  border-radius: 10px;
+  border: 1px solid #e1e4e3;
+}
+
+footer {
+  background: #17252d;
+  color: #cbd5d8;
+  padding: 35px 7%;
+  margin-top: 60px;
+}
+
+footer a {
+  color: white;
+}
+
+button,
+.button {
+  display: inline-block;
+  background: #315c6b;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  border: 0;
+  font-weight: 600;
+}
+
+button:hover,
+.button:hover {
+  background: #244a57;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  nav {
+    gap: 15px;
+  }
+
+  main {
+    padding-top: 45px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
