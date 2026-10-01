@@ -159,3 +159,9 @@ button:hover,
     font-size: 3rem;
   }
 }
+
+.brand img {
+  height: 70px;
+  width: auto;
+  display: block;
+}
